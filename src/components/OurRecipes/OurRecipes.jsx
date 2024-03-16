@@ -16,7 +16,7 @@ const OurRecipes = () => {
             .then(data => setRecipes(data))
     }, [])
     const handleWTCook = (wTCook) => {
-        if (!wTCooks.includes(wTCook)) {
+        if (!wTCooks.includes(wTCook) &&!cCooking.includes(wTCook)) {
             setWTCooks([...wTCooks, wTCook]);
             toast.success("Recipe successfully added !")
 
@@ -26,8 +26,10 @@ const OurRecipes = () => {
     }
     const handlePreparing=(wTCook) => {
        const recipePreparing= wTCooks.filter(component=> component!==wTCook);
-       setWTCooks(recipePreparing);
+
+        setWTCooks(recipePreparing);
        setCCooking([...cCooking,wTCook]);
+
     }
     return (
         <div className="lg:mt-[100px] lg:mb-[100px]">
