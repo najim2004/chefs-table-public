@@ -15,8 +15,8 @@ const CookSection = ({ wTCooks, handlePreparing, cCooking }) => {
                             <tr>
                                 <th></th>
                                 <th>Name</th>
-                                <th>Job</th>
-                                <th>Favorite Color</th>
+                                <th>Time</th>
+                                <th>Calories</th>
                             </tr>
                         </thead>
                         <tbody className='*:border-none bg-[rgba(40,40,40,0.03)] text-[rgba(40,40,40,0.70)] fira-sans'>
@@ -37,7 +37,7 @@ const CookSection = ({ wTCooks, handlePreparing, cCooking }) => {
 
 
             <div className="">
-                <h3 className="text-2xl mt-8 mb-4 font-semibold text-center">Currently cooking:{cCooking.length}</h3>
+                <h3 className="text-2xl mt-8 mb-4 font-semibold text-center">Currently cooking: {cCooking.length}</h3>
                 <hr className="border-t-[1px] mb-6 border-[rgba(40,40,40,0.15)] w-[350px] mx-auto" />
             </div>
             <div className="">
@@ -48,8 +48,8 @@ const CookSection = ({ wTCooks, handlePreparing, cCooking }) => {
                             <tr>
                                 <th></th>
                                 <th>Name</th>
-                                <th>Job</th>
-                                <th>Favorite Color</th>
+                                <th>Time</th>
+                                <th>Calories</th>
                             </tr>
                         </thead>
                         <tbody className='*:border-none bg-[rgba(40,40,40,0.03)] text-[rgba(40,40,40,0.70)] fira-sans'>
